@@ -11,7 +11,7 @@ class App extends React.Component {
           <tbody>
             <tr>
               <td>
-                <img alt="app icon" width="45" src="logo.png"></img>
+                <img alt="app icon" width="45" src={require("./logo.png")}></img>
               </td>
               <td width="15"></td>
               <td>
