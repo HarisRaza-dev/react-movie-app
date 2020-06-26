@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SearchMovie from "./SearchMovie"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <table className="heading">
+          <tbody>
+            <tr>
+              <td>
+                <img alt="app icon" width="45" src="logo.png"></img>
+              </td>
+              <td width="15"></td>
+              <td>
+                <h1>Movies App</h1>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <SearchMovie />
+      </div>
+    );
+  }
 }
-
 export default App;
